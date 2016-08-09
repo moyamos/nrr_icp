@@ -1,10 +1,9 @@
 CC=g++
-INCLUDE=-I/usr/X11R6/include
-LIB=-L/usr/X11R6/lib
+INCLUDE=
+LIB=
 OUTBIN=nrrICP
 
 all: clean main.o 
-#	g++ ${LIB} -lGL -lglut -lXmu -lXi -lstdc++ -lm -lpthread -lncurses -o ${OUTBIN} *.o
 	${CC} ${LIB} *.o -lGL -lglut -lGLU -lstdc++ -lpthread -lm -o ${OUTBIN}
 
 main.o:
