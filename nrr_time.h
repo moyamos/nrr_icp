@@ -1,3 +1,6 @@
+#ifndef _NRR_TIME_H_
+#define _NRR_TIME_H_
+
 #include <sys/time.h>
 
 class nrr_time
@@ -22,3 +25,5 @@ class nrr_time
       timeval systemTime;
       struct timezone no_good;
 };
+
+#endif
